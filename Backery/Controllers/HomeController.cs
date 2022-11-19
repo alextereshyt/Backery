@@ -6,18 +6,20 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Backery.Data;
 
 namespace Backery.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private ApplicationDB db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationDB context)
         {
-            _logger = logger;
+            db = context;
         }
-
+        
         public IActionResult Index()
         {
             return View();
