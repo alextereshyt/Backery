@@ -1,0 +1,30 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap%27');
+
+body {
+}
+
+.listfooter {
+    display: flex;
+    list-style: none;
+}
+
+.item-menu {
+    padding: 1px 30px;
+    font-family: 'Lora', serif;
+}
+
+.logofotter {
+    color: gray;
+    font-size: 70px;
+    font-family: 'Allura', cursive;
+}
+
+.log {
+    position: relative;
+    top: -60px;
+}
+
+#logo {
+    padding: 1px 30px;
+}
