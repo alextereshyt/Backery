@@ -28,7 +28,7 @@ namespace Backery
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ApplicationDB>(opt => opt.UseSqlServer(@"Data Source=DESKTOP-I39K7EJ\MSSQLSERVER01;Initial Catalog=backeryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
+            services.AddDbContext<ApplicationDB>(opt => opt.UseSqlServer(@"Data Source=DESKTOP-HTRTTSR\SQLEXPRESS;Initial Catalog=backeryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
 
         }
 
