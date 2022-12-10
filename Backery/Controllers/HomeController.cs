@@ -24,7 +24,10 @@ namespace Backery.Controllers
         {
             return View();
         }
-
+        public IActionResult DBForm()
+        {
+            return View();
+        }
         public IActionResult Test()
      
         {
