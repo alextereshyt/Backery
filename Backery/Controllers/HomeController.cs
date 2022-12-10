@@ -25,8 +25,10 @@ namespace Backery.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Test()
+     
         {
+            ViewBag.Data = db.Products.ToArray();
             return View();
         }
 
