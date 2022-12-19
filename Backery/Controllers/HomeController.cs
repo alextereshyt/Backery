@@ -22,18 +22,18 @@ namespace Backery.Controllers
         
         public IActionResult Index()
         {
+
             return View();
         }
-        public IActionResult DBForm()
-        {
-            return View();
-        }
-        public IActionResult Test()
-     
+
+        public IActionResult Cart()
         {
             ViewBag.Data = db.Products.ToArray();
+            ViewBag.Res = db.Reservations.ToArray();
             return View();
         }
+
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

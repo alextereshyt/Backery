@@ -1,0 +1,30 @@
+﻿@page
+@model Backery.Views.Home.Index1Model
+
+@{
+    Layout = null;
+}
+<h3>Products:</h3>
+@foreach (var x in ViewBag.Data)
+{
+var product = "id: "+x.id.ToString() +"   name: "+x.name+"   price: "+x.price.ToString();
+<li>@product</li>
+}
+<br>
+<h3>Reservations:</h3>
+@foreach (var x in ViewBag.Res)
+{
+var res = "id: "+x.id.ToString() +"   name: "+x.fullName+"   adress: "+x.fullAdress.ToString()+"   phone: "+x.phone.ToString();
+<li>@res</li>
+}
+<br><br>
+
+<h3>Test form:</h3>56778
+
+<form method="post" action="addReservation">
+    Full Name: <input type="text" name="name"><br>
+    Adress: <input type="text" name="adress"><br>
+    Phone: <input type="text" name="phone"><br>
+    Products: <input type="text" name="product"><br><br>
+    <input type="submit" value="Submit">
+</form>
