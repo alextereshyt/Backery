@@ -6,5 +6,9 @@
   {
     "outputFile": "wwwroot/css/header_index.css",
     "inputFile": "wwwroot/css/header_index.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/art_of_cakes/art_of_cakes_style.css",
+    "inputFile": "wwwroot/css/art_of_cakes/art_of_cakes_style.scss"
   }
 ]

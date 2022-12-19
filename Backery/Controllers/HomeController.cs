@@ -23,7 +23,7 @@ namespace Backery.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult ArtOfCakes()
         {
             return View();
         }
