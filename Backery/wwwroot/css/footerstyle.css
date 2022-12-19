@@ -1,16 +1,24 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap%27');
 
-body {
+#footter.wrapper {
+    background-color: #f3f1e9;
+    width: 100%;
 }
-
+ 
 .listfooter {
     display: flex;
     list-style: none;
 }
-
+.footer {
+    display: flex;
+    list-style: none;
+    background: #f3f1e9;
+    max-width: 1400px;
+    margin: 0px auto;
+}
 .item-menu {
-    padding: 1px 30px;
+    padding: 15px 30px;
     font-family: 'Lora', serif;
 }
 
@@ -26,5 +34,5 @@ body {
 }
 
 #logo {
-    padding: 1px 30px;
+    padding:  30px;
 }
