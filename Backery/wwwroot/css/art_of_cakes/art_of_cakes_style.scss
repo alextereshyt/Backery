@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -12,7 +13,7 @@ body {
     // overflow-x: hidden;
 }
 
-.art_container{
+.art_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: 'Inconsolata', monospace;
@@ -21,8 +22,8 @@ body {
     margin: 1vw auto 0 auto;
 }
 
-.art_main{
-    .title{
+.art_main {
+    .title {
         font-size: 22pt;
         text-align: center;
         font-weight: 900;
@@ -32,7 +33,7 @@ body {
         margin-bottom: 0.3vh;
     }
 
-    .sub_title{
+    .sub_title {
         font-size: 11pt;
         text-align: center;
         font-weight: 900;
@@ -41,14 +42,14 @@ body {
         margin-bottom: 10vh;
     }
 
-    .desc{
+    .desc {
         font-size: 10pt;
         text-align: center;
         letter-spacing: 0.07vw;
         margin-bottom: 7.5vh;
     }
 
-    .chef_title{
+    .chef_title {
         font-size: 16pt;
         text-align: center;
         font-weight: 900;
@@ -57,13 +58,13 @@ body {
         word-spacing: -0.35vw;
     }
 
-    .chef_main{
+    .chef_main {
         display: flex;
         justify-content: center;
         font-size: 16pt;
         font-weight: 300;
 
-        div{
+        div {
             height: 7vh;
             display: grid;
             justify-content: center;
@@ -73,31 +74,32 @@ body {
             padding: 0px 2vw;
         }
 
-        img{
+        img {
             position: relative;
             top: -25px;
             padding: 0px 1.5vw;
         }
+
         margin-bottom: 10vh;
     }
 
-    .chef_desc{
+    .chef_desc {
         display: flex;
         justify-content: center;
 
-        div{
+        div {
             font-size: 32pt;
             margin: 0px 1vw;
             font-weight: bold;
             font-family: 'Arsenal', sans-serif;
         }
 
-        div:nth-child(3){
+        div:nth-child(3) {
             position: relative;
             top: 7.5vh;
         }
 
-        .chef_desc_text{
+        .chef_desc_text {
             text-align: center;
             font-size: 28pt;
             font-weight: normal;
@@ -123,18 +125,45 @@ body {
         .images {
             position: relative;
             z-index: 1;
+            transition: all 0.3s ease;
 
             &::before {
                 content: '';
                 position: absolute;
-                z-index: 2;
+                z-index: 3;
                 top: 5px;
                 left: 5px;
                 bottom: 5px;
                 right: 5px;
                 border: 5px solid white;
                 display: block;
-                transition: all 0.3s;
+                transition: all 0.3s ease;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                transition: all 0.3s ease;
+            }
+
+
+            &:hover {
+                &::before {
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    border: 5px solid rgb(98, 218, 128);
+                }
+
+                &::after {
+                    background: rgba(0,0,0, 0.3);
+                }
             }
         }
     }

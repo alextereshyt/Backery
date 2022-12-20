@@ -109,18 +109,39 @@ body {
 .images_block .art_images .images {
   position: relative;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 .images_block .art_images .images::before {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 5px;
   left: 5px;
   bottom: 5px;
   right: 5px;
   border: 5px solid white;
   display: block;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+}
+.images_block .art_images .images::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.images_block .art_images .images:hover::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 5px solid rgb(98, 218, 128);
+}
+.images_block .art_images .images:hover::after {
+  background: rgba(0, 0, 0, 0.3);
 }
 .images_block .marka_block {
   position: absolute;
