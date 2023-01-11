@@ -1,0 +1,55 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.header-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    height: 12.5vh;
+    background: rgba(0, 0, 0, 20%);
+
+    div.title {
+        font-family: 'Allura', cursive;
+        font-size: 40pt;
+        letter-spacing: 0.2vw;
+        margin: auto auto;
+        color: white;
+    }
+
+
+    div.menu-bar {
+        display: flex;
+
+        div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            padding: 0px 9px;
+
+            p {
+                letter-spacing: 0.3vw;
+                font-family: 'Lora', serif;
+                font-size: 10pt;
+                color: white;
+            }
+        }
+
+        div.menu-bar-text:hover {
+            background-color: rgba(0,0,0, 0.3);
+        }
+    }
+
+    div.images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 32px;
+            height: 32px;
+            margin: 0px 8px;
+        }
+    }
+}

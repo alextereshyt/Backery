@@ -2,35 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 .header-container {
   display: grid;
-  grid-template-columns: 0.75fr 1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   height: 12.5vh;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
 .header-container div.title {
   font-family: "Allura", cursive;
   font-size: 40pt;
   letter-spacing: 0.2vw;
   margin: auto auto;
+  color: white;
 }
 .header-container div.menu-bar {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .header-container div.menu-bar div {
-  margin: 0px 1vw 0px 1vw;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0px 9px;
+}
+.header-container div.menu-bar div p {
   letter-spacing: 0.3vw;
   font-family: "Lora", serif;
   font-size: 10pt;
+  color: white;
+}
+.header-container div.menu-bar div.menu-bar-text:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .header-container div.images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-container div.images img {
-  width: 2vw;
-  height: 3.5vh;
-  background-size: contain;
-  background-repeat: no-repeat;
+.header-container div.images div {
+  width: 32px;
+  height: 32px;
+  margin: 0px 8px;
 }

@@ -10,5 +10,13 @@
   {
     "outputFile": "wwwroot/css/art_of_cakes/art_of_cakes_style.css",
     "inputFile": "wwwroot/css/art_of_cakes/art_of_cakes_style.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/header/header_media.css",
+    "inputFile": "wwwroot/css/header/header_media.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/header/header.css",
+    "inputFile": "wwwroot/css/header/header.scss"
   }
 ]
