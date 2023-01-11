@@ -1,0 +1,194 @@
+﻿#TastyPank.wrapper {
+    padding: 50px;
+    position: relative;
+    width: 1400px;
+    margin: 0px auto;
+    background-image: url('/images/Eben11.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+}
+
+.tasty-contein {
+    width: 70%;
+    margin: 90px 90px;
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+}
+
+.tasty-box2, .tasty-box1 {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+}
+ 
+.tasty-box1 {
+    position: relative;
+    background-image: url('/images/Ebene 7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75% 75%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%, 0 89%);
+}
+
+
+
+    .tasty-box1:before {
+        content: "";
+        position: absolute;
+        top: 89%;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        border-top: 52px solid #F7F7F7;
+        border-left: 52px solid transparent;
+    }
+/**************************************************/
+.tetxTas {
+    width: 25%;
+    z-index: 3;
+    position: absolute;
+    top: 12em;
+    margin: 0px 80px;
+}
+
+    .tetxTas h1 {
+        font-size: 280%;
+    }
+
+    .tetxTas p {
+        padding: 60px 0px;
+    }
+
+    .tetxTas h5 {
+        color: burlywood;
+    }
+
+.img-tasty {
+    z-index: 2;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/Vektor-Smartobjekt1.png');
+    background-size: 44%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+
+/********************************************************
+*/
+
+.items-textbox {
+    width: 11%;
+    height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 90px;
+    left: 69%;
+    position: absolute;
+    z-index: 3;
+}
+
+    .items-textbox h1 {
+        font-family: 'Zilla Slab', serif;
+        font-size: 50px;
+    }
+
+    .items-textbox h4 {
+        color: #a47d5e;
+    }
+
+    .items-textbox p {
+        color: gray;
+    }
+
+#colortextH1 {
+    color: #dfc691;
+    font-size: 60px;
+}
+
+#imagelogo {
+    box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+    opacity: 0.9;
+    background-size: cover;
+    background-color: white;
+    background-image: url("/images/Vektor.png");
+    background-repeat: no-repeat;
+}
+/*******************************/
+
+
+
+.img1 {
+    background-image: url('/images/Ebene 8.png');
+}
+
+.img2 {
+    background-image: url('/images/img 9.png');
+}
+
+.img3 {
+    background-image: url(/images/img10.png);
+}
+
+.img1, .img2, .img3 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-size: 230%;
+    background-repeat: no-repeat;
+    background-position: 60% 70%;
+    margin: 0px 20px;
+}
+
+.iteams-list-tasty button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    margin: 40px auto;
+    background: transparent;
+    text-align: center;
+    font-size: 24px;
+}
+
+.boxlist-tasty {
+    position: absolute;
+    left: 42%;
+    top: 64%;
+}
+
+.list-tasty {
+    display: flex;
+    list-style: none;
+}
+/*+++++++++++++++++++++++++++++++++++++++++*/
+.star-tasty ul {
+    list-style: none;
+}
+
+.star-tasty {
+    position: absolute;
+    top: 35%;
+    left: 6%;
+}
+
+.colo {
+    justify-content: center;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 46%;
+    left: 36.5%;
+}
+
+    .colo p {
+        color: #dfc691;
+    }

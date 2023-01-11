@@ -24,6 +24,10 @@ namespace Backery.Controllers
         {
             return View();
         }
+        public IActionResult Tasty()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
