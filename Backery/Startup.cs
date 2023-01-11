@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Backery.Data;
 using Backery.Models;
 
 using Microsoft.EntityFrameworkCore;
@@ -28,8 +27,6 @@ namespace Backery
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ApplicationDB>(opt => opt.UseSqlServer(@"Data Source=DESKTOP-HTRTTSR\SQLEXPRESS;Initial Catalog=backeryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
