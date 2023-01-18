@@ -25,16 +25,34 @@ namespace Backery.Controllers
 
             return View();
         }
-
         public IActionResult Cart()
+        {
+
+            return View();
+        }
+
+        public IActionResult Debug()
         {
             ViewBag.Data = db.Products.ToArray();
             ViewBag.Res = db.Reservations.ToArray();
             return View();
         }
 
-       
+        [HttpPost]
+        public IActionResult addReservation()
+        {
+            Reservation temp = new Reservation();
+            temp.fullName = HttpContext.Request.Form["name"];
+            temp.fullAdress = HttpContext.Request.Form["adress"];
+            temp.phone = HttpContext.Request.Form["phone"];
+            temp.linkProduct(db.Products.ElementAt<Product>(Convert.ToInt32(HttpContext.Request.Form["product"])));
 
+            db.Reservations.Add(temp);
+            db.SaveChanges();
+            return Content("Succesfully added reservation");
+        }
+
+       
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

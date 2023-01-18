@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+    background-color: black;
+    color: greenyellow;
+    font-family: 'VT323', monospace;
+}
+
+.output {
+    font-family: 'VT323', monospace;
+}
+
+#input {
+    width: 100%;
+    background-color: black;
+    color: greenyellow;
+    border: none;
+    outline: none;
+    position: relative;
+    bottom: 16px;
+    font-family: 'VT323', monospace;
+    font-size: medium;
+}
+
+input {
+    background-color: black;
+    color: greenyellow;
+    font-family: 'VT323', monospace;
+    border: 1px greenyellow solid;
+}
+/*# sourceMappingURL=style.css.map */
