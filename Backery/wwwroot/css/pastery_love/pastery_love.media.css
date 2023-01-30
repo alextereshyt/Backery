@@ -1,0 +1,11 @@
+﻿@media only screen and (max-width: 768px) {
+  .pastery_love_title {
+    font-size: 36pt;
+  }
+  .pastery_love_text {
+    font-size: 12pt;
+  }
+  .pastery_love_button {
+    font-size: 12pt;
+  }
+}

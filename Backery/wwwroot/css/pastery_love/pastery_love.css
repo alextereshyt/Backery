@@ -1,0 +1,77 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pastery_love_container {
+    height: 100vh;
+    background-image: url(/images/pastery_love_images/back.png);
+    background-repeat: no-repeat;
+}
+
+.pastery_love_block {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 5px 5px 50px 13px rgba(0,0,0,0.46);
+    box-shadow: 5px 5px 100px 13px rgba(0,0,0,0.46);
+    background-color: rgba(0,0,0,0.26);
+    width: 55%;
+    height: 50%;
+    border-radius: 50%;
+    position: relative;
+    top: 20%;
+}
+
+.pastery_love_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48pt;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 5vh;
+}
+
+.pastery_love_dec {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 7.5vh;
+}
+
+.pastery_love_text {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18pt;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding-bottom: 10vh;
+}
+
+.pastery_love_button {
+    color: white;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 18pt;
+    margin: auto;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(115, 115, 115, 0.5);
+    border-radius: 5px;
+    border: 1px rgba(115, 115, 115, 0.5) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+}
+
+    .pastery_love_button:hover {
+        border: 1px white solid;
+        transition: all 2s;
+    }
