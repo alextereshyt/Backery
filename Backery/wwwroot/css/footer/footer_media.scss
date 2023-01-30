@@ -1,0 +1,42 @@
+@media only screen and (max-width: 992px) {
+
+    .footer-left-menu,
+    .footer-right-menu {
+
+        div {
+            padding: 0 0.3vw;
+
+            p {
+                letter-spacing: 0.3vw;
+                font-size: 8pt;
+                top: calc(50% - 4pt);
+            }
+        }
+    }
+
+    .footer-title {
+        div {
+            p {
+                font-size: 28pt;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .footer-left-menu,
+    .footer-right-menu {
+
+        div {
+            padding: 0 0.2vw;
+
+            p {
+                letter-spacing: 0.2vw;
+                font-size: 6pt;
+                top: calc(50% - 3pt);
+            }
+        }
+    }
+}

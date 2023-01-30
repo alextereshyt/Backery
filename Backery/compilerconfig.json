@@ -18,5 +18,13 @@
   {
     "outputFile": "wwwroot/css/header/header.css",
     "inputFile": "wwwroot/css/header/header.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/art_of_cakes/art_of_cakes_media.css",
+    "inputFile": "wwwroot/css/art_of_cakes/art_of_cakes_media.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/footer/footer.css",
+    "inputFile": "wwwroot/css/footer/footer.scss"
   }
 ]

@@ -1,0 +1,27 @@
+@media only screen and (max-width: 992px) {
+  .footer-left-menu div,
+.footer-right-menu div {
+    padding: 0 0.3vw;
+  }
+  .footer-left-menu div p,
+.footer-right-menu div p {
+    letter-spacing: 0.3vw;
+    font-size: 8pt;
+    top: calc(50% - 4pt);
+  }
+  .footer-title div p {
+    font-size: 28pt;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-left-menu div,
+.footer-right-menu div {
+    padding: 0 0.2vw;
+  }
+  .footer-left-menu div p,
+.footer-right-menu div p {
+    letter-spacing: 0.2vw;
+    font-size: 6pt;
+    top: calc(50% - 3pt);
+  }
+}/*# sourceMappingURL=footer_media.css.map */

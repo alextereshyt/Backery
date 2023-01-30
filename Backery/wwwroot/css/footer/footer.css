@@ -1,0 +1,69 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container {
+  margin-bottom: 1px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-left-menu,
+.footer-right-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-left-menu,
+.footer-right-menu {
+  position: relative;
+  box-sizing: border-box;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.footer-left-menu::before,
+.footer-right-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 50%;
+  -webkit-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.75);
+}
+.footer-left-menu div,
+.footer-right-menu div {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  padding: 0 0.5vw;
+  transition: all 0.3s ease;
+}
+.footer-left-menu div:hover,
+.footer-right-menu div:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.footer-left-menu div p,
+.footer-right-menu div p {
+  letter-spacing: 0.3vw;
+  font-family: "Lora", serif;
+  font-size: 10pt;
+  font-weight: bolder;
+  position: relative;
+  top: calc(50% - 5pt);
+}
+
+.footer-title div {
+  text-align: center;
+}
+.footer-title div p {
+  font-family: "Allura", cursive;
+  font-size: 40pt;
+}
