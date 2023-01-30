@@ -4,38 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Backery</title>
-    <link rel="stylesheet" href="~/css/header_index.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="title">Gustaso</div>
 
-            <div class="menu-bar">
-                <div>WELCOME</div>
-                <div>~</div>
-                <div>MENU</div>
-                <div>~</div>
-                <div>RESERVATIONS</div>
-                <div>~</div>
-                <div>NEWS</div>
-                <div>~</div>
-                <div>CONTACT</div>
-            </div>
-            
-            <div class="images">
-                <img src="~/images/twitter.png" />
-                <img src="~/images/facebook.png" />
-                <img src="~/images/instagram.png" />
-            </div>
-        </div>
-    </header>
+    @RenderBody()
 
-            @RenderBody()
- 
-    <footer>
-        <div></div>
-    </footer>
 </body>
 </html>
