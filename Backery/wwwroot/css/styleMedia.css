@@ -1,0 +1,70 @@
+@media only screen and (max-width: 575px) {
+  .tasty-box1 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%, 0 86.98%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%, 0 86.98%);
+    background-position: 75% 75%;
+    background-size: 100% 100%;
+  }
+  .tasty-box1::before {
+    display: none;
+  }
+  .tetxTas {
+    padding: 80px 45px;
+  }
+  .tasty-contein {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .tasty-box1::before {
+    display: none;
+  }
+  .tasty-box1 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0 100%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .boxlist-tasty-wrapper {
+    display: none;
+  }
+  #imagelogo {
+    display: none;
+  }
+  .tasty-box1::before {
+    top: 85%;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .boxlist-tasty-wrapper {
+    padding: 0 40px;
+  }
+  .items-textbox {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .items-textbox {
+    width: 14vw;
+    height: 20vh;
+  }
+  .tasty-contein {
+    width: 100%;
+  }
+  .items-textbox {
+    top: 5px;
+    right: 5px;
+  }
+  #TastyPank.wrapper {
+    padding: 50px 0px;
+    background-size: 100% 100%;
+  }
+}
+/*# sourceMappingURL=styleMedia.css.map */

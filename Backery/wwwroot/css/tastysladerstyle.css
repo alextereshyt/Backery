@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.boxlist-tasty-wrapper {
+  position: relative;
+  padding: 0 70px;
+  bottom: 60px;
+}
+
+.boxlist-tasty {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px auto 30px;
+      grid-template-columns: 30px auto 30px;
+}
+
+.boxlist-tasty button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  position: relative;
+  top: calc(100% / 2 - 15px);
+  background: transparent;
+  text-align: center;
+  font-size: 24px;
+}
+
+.boxlist-tasty .list-tasty {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90px;
+  list-style: none;
+}
+
+.boxlist-tasty .list-tasty .slide {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: 230%;
+  background-repeat: no-repeat;
+  background-position: 60% 70%;
+}
+
+.boxlist-tasty .list-tasty .img1 {
+  left: 0%;
+}
+
+.boxlist-tasty .list-tasty .img2 {
+  left: calc(50% - 45px);
+}
+
+.boxlist-tasty .list-tasty .img3 {
+  left: calc(100% - 90px);
+}
+
+.img1 {
+    background-image: url("/image/Ebene 8.png");
+}
+
+.img2 {
+  background-image: url("/image/img 9.png");
+}
+
+.img3 {
+    background-image: url(/image/img10.png);
+}
+
+.img4 {
+    background-image: url("/image/img 9.png");
+}
+
+ 
+/*# sourceMappingURL=tastysladerstyle.css.map */
